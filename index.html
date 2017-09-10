@@ -22,6 +22,17 @@
             })();
           })();
       </script>
+      <script type="text/javascript">
+	today=new Date();
+	var time;
+	hour=new Date().getHours()
+	if(hour < 6)time='  早上 '
+	else if(hour < 12)time=' 中午 '
+	else if(hour < 17)time=' 晚上 '
+	else time=' 夜宵 '
+	var webUrl = webUrl;
+	document.write(time);
+      </script>
 </head>
 
 <body>
